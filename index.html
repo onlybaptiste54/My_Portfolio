@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baptiste Beroual</title>
@@ -87,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <svg class="home_blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+                <svg class="home_blob"  viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg" >
                     <mask id="maskBlob" mask-type="alpha">
                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
@@ -117,7 +119,7 @@
                        </pattern>
                  
                        <!-- Insert your profile (recommended size: 640 x 940) -->
-                       <image class="home_img" id="imageBlob" width="640" height="925" href="img/profile.png"/>
+                       <image class="home_img"  id="imageBlob" width="640" height="925" href="img/profile.png" data-aos="flip-right"/>
                     </defs>
                  </svg>
             </div>
@@ -139,7 +141,8 @@
                 </div>
         </section>
              <!-- projets principal -->
-             <section class="skills section" id="skills">
+             <section class="skills section "data-aos="fade-up"
+             data-aos-anchor-placement="center-bottom" id="skills">
                 <div class="skills_container container grid">
                     <div class="skills_data">
                         <h3 class="section_soustitre">
@@ -156,7 +159,7 @@
                         <br>
                         <a href="#Projects" class="button">Voir mes projets</a>
                     </div>
-                    <div class="skills_content">
+                    <div class="skills_content" >
                         <ol class="skills_group" start="1">
                             <li class="skills_item">HTML & CSS</li>
                             <li class="skills_item">JavaScript</li>
@@ -175,27 +178,27 @@
                 </div>
             </section>
                 <!-- projets principal -->
-            <section class="projects  section" id="Projects">
+            <section class="projects  section"  id="Projects">
                 <h3 class="section_soustitre">
                     Mon<span> travail</span>
                 </h3>
                 <h2 class="section_title">
                     Mes projets recents
                 </h2>
-                <div class="projects_container container grid">
+                <div class="projects_container container grid " >
                     <article class="projects_card">
-                        <img src="img/job_board.jpeg" alt="projects image" class="projects_images">
+                        <img src="img/job_board.jpeg" alt="projects image" class="projects_images"data-aos="fade-right">
                         <div class="projects_modals">
                             <span class="projects_soustitre">Site de recrutement</span>
                             
                             <h2 class="projects_title">Dream-Launch</h2>
-                            <a href="#" class="projects_button">
+                            <a href="https://github.com/onlybaptiste54/DreamLaunch" class="projects_button">
                                 View demo <i class="ri-external-link-line"></i>
                             </a>
                         </div>
                         
                     </article>
-                    <div class="projects_competences">
+                    <div class="projects_competences" data-aos="flip-left">
                         <h2>Compétences acquises :</h2>
                                 <ul>
                                     <li>Gestion de base de données</li>
@@ -206,17 +209,17 @@
                     </div>
                 
                     <article class="projects_card">
-                        <img src="img/asteroid.jpg" alt="projects image" id="asteroid_image" class="projects_images">
+                        <img src="img/asteroid.jpg" alt="projects image" id="asteroid_image" class="projects_images"data-aos="fade-right" >
                         <div class="projects_modals">
                             <span class="projects_soustitre">2D game</span>
                             
                             <h2 class="projects_title">Asteroid </h2>
-                            <a href="#" class="projects_button">
+                            <a href="https://github.com/onlybaptiste54/Java_2D_Game" class="projects_button">
                                 View demo <i class="ri-external-link-line"></i>
                             </a>
                         </div>
                     </article>
-                    <div class="projects_competences">
+                    <div class="projects_competences" data-aos="flip-left">
                         <h2>Compétences acquises :</h2>
                         <ul>
                             <li>Compétence en JAVA, et en logique de programation OOP</li>
@@ -278,7 +281,9 @@
     </a>
     <script src="js/main.js"></script>
    
-
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 
