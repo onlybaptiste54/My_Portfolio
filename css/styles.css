@@ -249,7 +249,7 @@ header {
 }
 .home_social{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     column-gap: 1.25rem;
 
 }
@@ -258,7 +258,7 @@ header {
     background-color: var(--main-color);
     padding: 0.5rem;
     color: whitesmoke;
-    margin: auto;
+    
     font-size: 1.5rem;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transition: transform 0.4s;
@@ -618,7 +618,7 @@ margin: 1rem;
 .nav-list{
     display: flex;
     flex-direction: row;
-    column-gap: 3rem;
+    column-gap: 2rem;
     
 
 }  
