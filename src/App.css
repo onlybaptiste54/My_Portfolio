@@ -1,0 +1,25 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.home_img {
+  justify-self: center;
+}
+
+.home_blob {
+  justify-self: center;
+  width: 360px;
+  fill: lightblue;
+  filter:drop-shadow(0 12px 12px hsla(blue,100%,40%,0.2));
+}
+
+@media (min-width: 1050px) {
+  .home_blob {
+    justify-self: center;
+    width: 500px;
+    fill: lightblue;
+    filter:drop-shadow(0 12px 12px hsla(blue,100%,40%,0.2));
+  }
+}
