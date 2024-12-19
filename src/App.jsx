@@ -8,11 +8,10 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import './App.css';
 
-const location = useLocation()
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Baptiste.Beroual.github.io">
       <div className="flex flex-col min-h-screen">
         {/* Header */}
         <Header />
