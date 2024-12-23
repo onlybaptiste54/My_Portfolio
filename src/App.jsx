@@ -11,8 +11,8 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router basename="/Baptiste.Beroual.github.io">
-      <div className="flex flex-col min-h-screen">
+<Router basename="">
+<div className="flex flex-col min-h-screen">
         {/* Header */}
         <Header />
 

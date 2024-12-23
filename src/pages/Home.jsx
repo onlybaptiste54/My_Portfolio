@@ -24,7 +24,7 @@ const Home = () => {
               <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
                 <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
               </pattern>
-              <image className="home_img" id="imageBlob" width="640" height="925" href={profileImage} data-aos="flip-right" />
+              <image className="home_img" id="imageBlob"  href={profileImage} data-aos="flip-right" />
             </defs>
           </svg>
         </div>
