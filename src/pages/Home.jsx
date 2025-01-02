@@ -2,10 +2,18 @@
 import React from 'react';
 import profileImage from '../assets/profile.png'; // Assure-toi que l'image est dans ce chemin
 import '../App.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Ajustez la durée si nécessaire
+  }, []);
+
   return (
     <section id="home" className=" ">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between p-auto ">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between p-auto"> 
       {/* Section SVG et image */}
         <div className="flex-1 md:w-1/2">
           <svg className="home_blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
@@ -24,13 +32,13 @@ const Home = () => {
               <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
                 <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
               </pattern>
-              <image className="home_img" id="imageBlob"  href={profileImage} data-aos="flip-right" />
+              <image className="home_img" id="imageBlob" width="640" height="925" href={profileImage}  />
             </defs>
           </svg>
         </div>
 
         {/* Section texte à droite du SVG */}
-        <div className="flex-1 pl-8 md:w-1/2 mt-6 md:mt-0">
+        <div className="flex-1 pl-8 md:w-1/2 mt-6 md:mt-0" data-aos="zoom-in">
           <h2 className="text-4xl font-semibold mb-4">Bienvenue sur mon portfolio</h2>
           <p className="text-lg mb-4">
             Je suis un développeur passionné par l'automatisation des processus et l'optimisation des flux de travail.

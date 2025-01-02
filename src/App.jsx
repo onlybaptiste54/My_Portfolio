@@ -11,7 +11,7 @@ import './App.css';
 
 const App = () => {
   return (
-<Router basename="">
+<Router basename="onlybaptiste54.github.io">
 <div className="flex flex-col min-h-screen">
         {/* Header */}
         <Header />

@@ -1,35 +1,53 @@
-// src/pages/Projects.jsx
 import React from 'react';
 
 const Projects = () => {
   return (
-    <section id="projects" className="p-6 bg-white">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl font-semibold text-center mb-6">Mes Projets</h2>
-        <div className="relative perspective-2000">
-          <div className="flex flex-col place-content-center  space-y-6">
-            {/* Carte Projet 1 */}
-            <div className="project-card w-64 h-80 p-4 rounded-lg shadow-lg bg-white transform transition-transform duration-500 hover:rotate-y-12 hover:scale-105">
-              <h3 className="text-xl font-semibold mb-4">Projet 1</h3>
-              <p className="text-sm">Une brève description du projet 1.</p>
-            </div>
+    <section id="projects" className="p-6 ">
+      <div className="w-4/5 mx-auto">
+        <h2 className="text-3xl font-bold text-center text-indigo-500 mb-8">Mes Projets</h2>
+        
+        <div className=" space-y-8  ">
+          <div className="flex flex-col md:flex-row project-card w-full p-6 rounded-lg shadow-lg bg-white transform transition-transform duration-500 hover:scale-105">
+            <h3 className="text-xl font-semibold text-indigo-500 mb-4">Projet 1</h3>
+            
+            <p className="text-gray-700 mb-4">
+              Une brève description du projet, expliquant son objectif et sa réalisation.
+            </p>
+            <ul className="list-disc list-inside text-gray-600 mb-4">
+              <li>Objectif : Simplifier l'accès à des données complexes.</li>
+              <li>Technologie : React, Node.js, API RESTful.</li>
+              <li>Résultat : Gain de 30% de productivité.</li>
+            </ul>
 
-            {/* Carte Projet 2 */}
-            <div className="project-card w-64 h-80 p-4 rounded-lg shadow-lg bg-white transform transition-transform duration-500 hover:rotate-y-12 hover:scale-105">
-              <h3 className="text-xl font-semibold mb-4">Projet 2</h3>
-              <p className="text-sm">Une brève description du projet 2.</p>
+            <div className="relative aspect-w-16 aspect-h-9">
+              <iframe
+                className="rounded-lg shadow"
+                src="https://www.youtube.com/embed/ScMzIvxBSi4" // Remplace par le lien de ta vidéo
+                title="Présentation du projet 1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
+          </div>
 
-            {/* Carte Projet 3 */}
-            <div className="project-card w-64 h-80 p-4 rounded-lg shadow-lg bg-white transform transition-transform duration-500 hover:rotate-y-12 hover:scale-105">
-              <h3 className="text-xl font-semibold mb-4">Projet 3</h3>
-              <p className="text-sm">Une brève description du projet 3.</p>
-            </div>
-
-            {/* Carte Projet 4 */}
-            <div className="project-card w-64 h-80 p-4 rounded-lg shadow-lg bg-white transform transition-transform duration-500 hover:rotate-y-12 hover:scale-105">
-              <h3 className="text-xl font-semibold mb-4">Projet 4</h3>
-              <p className="text-sm">Une brève description du projet 4.</p>
+          <div className="project-card w-full p-6 rounded-lg shadow-lg bg-white transform transition-transform duration-500 hover:scale-105">
+            <h3 className="text-xl font-semibold text-indigo-500 mb-4">Projet 2</h3>
+            <p className="text-gray-700 mb-4">
+              Un autre projet innovant, conçu pour résoudre des problématiques uniques.
+            </p>
+            <ul className="list-disc list-inside text-gray-600 mb-4">
+              <li>Objectif : Améliorer l'expérience utilisateur.</li>
+              <li>Technologie : Next.js, Tailwind CSS, Firebase.</li>
+              <li>Résultat : Augmentation de 50% du trafic web.</li>
+            </ul>
+            <div className="relative aspect-w-16 aspect-h-9">
+              <iframe
+                className="rounded-lg shadow"
+                src="https://www.youtube.com/embed/ScMzIvxBSi4" // Remplace par le lien de ta vidéo
+                title="Présentation du projet 2"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
