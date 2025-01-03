@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <section id="home" className=" ">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between p-auto"> 
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between p-auto" data-aos="flip-right"> 
       {/* Section SVG et image */}
         <div className="flex-1 md:w-1/2">
           <svg className="home_blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
